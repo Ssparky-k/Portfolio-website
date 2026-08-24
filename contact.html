@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-section {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 40px 20px;
+        }
+
+        .contact-section h1 {
+            font-size: 2rem;
+            margin: 10px 0 40px;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            width: 45%;
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info>p {
+            line-height: 1.7;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .contact-item h3 {
+            margin: 0 0 5px;
+        }
+
+        .contact-item p {
+            margin: 0;
+            color: gray;
+        }
+
+        .contact-form {
+            width: 50%;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            border-color: #6c63ff;
+        }
+
+        .input-group textarea {
+            resize: vertical;
+        }
+
+        .input-group small {
+            display: block;
+            margin-top: 5px;
+            color: red;
+        }
+
+        .contact-btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+        }
+
+        #successMessage {
+            color: green;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 100%;
+            }
+
+            .contact-section {
+                margin: 40px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-section" id="contact">
+        <span class="text-gray">Get in touch</span>
+        <h1>Contact Me</h1>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h2>Connect</h2>
+                <p>
+                    If you have a project, questions contact me.
+                </p>
+
+                <div class="contact-item">
+                    <div>
+                        <h3>Email</h3>
+                        <p>shivkate123@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 9076293525</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>
+                        <h3>Location</h3>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Enter your message"></textarea>
+                    <small id="messageError"></small>
+                </div>
+
+                <button type="submit" class="contact-btn">
+                    Send Message
+                </button>
+
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+    </section>
+
+    <script src="App.js"></script>
+</body>
+
+</html>

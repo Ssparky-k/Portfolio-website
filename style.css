@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 8, 53);
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(0, 50, 119);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav ul li a:hover {
+    color: rgb(116, 116, 183);
+    font-size: 1.02rem;
+}
+
+main hr {
+    border: 0;
+    background: rgb(152, 100, 152);
+    height: 2px;
+    margin: 60px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background-color: rgb(74, 46, 175);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rightSection img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+.text-gray {
+    color: gray;
+
+}
+
+#element {
+    color: rgb(116, 116, 183);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 50vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: whitesmoke;
+    width: 76vw;
+    height: 1px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background: whitesmoke;
+    margin: 0 7vw;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    left: -12px;
+}
+
+.vartical-title {
+    position: relative;
+    left: 20px;
+    top: 75px;
+    width: 150px;
+    font-size: 16px;
+}
+
+.vartical-decs {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 200px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+footer {
+    background-color: rgb(2, 3, 62);
+}
+
+.footer {
+    display: flex;
+    padding: 30px 120px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer>div {
+    width: 200px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .secondSection .vertical {
+        height: unset;
+    }
+
+    .vartical-title  {
+        left: 20px;
+    }
+
+    .vartical-decs {
+        left: 20px;
+    }
+
+    .secondSection .box {
+        width: 50vw;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .firstSection {
+        flex-direction: column-reverse;
+    }
+
+    .leftSection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondSection {
+        height: 100vh;
+    }
+
+    .rightSection {
+        width: 720px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSection img {
+        width: 45vw;
+        margin-bottom: 73px;
+    }
+
+    body {
+        min-width: fit-content;
+    }
+
+    .image-top {
+        top: 110px;
+    }
+}
