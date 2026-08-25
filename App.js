@@ -4,17 +4,17 @@ console.log("Script running...");
 let home1 = document.querySelector(".home");
 home1.addEventListener("click", function () {
       event.preventDefault();
-      console.log("click the button")
+      console.log("click the button");
 });
 
 var typed = new Typed('#element', {
     strings: [
         'Web Developer.',
-        'Web Designer.',
-        'Frontend Developer.'
+        'Frontend Developer.',
+        'Web Designer.'
     ],
     typeSpeed: 100,
-    backSpeed: 50,
+    backSpeed: 100,
     loop: true
 });
 
