@@ -24,9 +24,4 @@ resume.addEventListener("click", () => {
     alert("resume is downloading!");
 });
 
-const home = document.querySelector(".home");
-
-home.addEventListener("click", () => {
-    alert("Your already in side Home page");
-});
 
