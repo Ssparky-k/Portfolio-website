@@ -152,13 +152,8 @@ main hr {
 }
 
 .secondSection h1 {
-    font-size: clamp(1.7rem, 3vw, 2.2rem);
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.text-gray {
-    color: gray;
+    font-size: 1.9rem;
+    padding-left: 40px;
 }
 
 .secondSection .box {
@@ -176,7 +171,7 @@ main hr {
     left: 5%;
     right: 5%;
     height: 2px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .secondSection .vertical {
@@ -184,15 +179,12 @@ main hr {
     min-height: 360px;
     width: 100%;
     padding: 0 15px;
-    border-left: 2px solid whitesmoke;
+    border-left: 2px solid black;
 }
 
 .image-top {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
     background-color: azure;
-    border-radius: 5px;
+    width: 25px;
     position: relative;
     top: 20px;
     left: -26px;
@@ -341,16 +333,15 @@ footer {
     }
 
     .leftSection {
-        font-size: clamp(2rem, 6vw, 2.7rem);
-    }
-
-    .leftSection .buttons {
-        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .secondSection {
-        width: 90%;
-        margin-bottom: 100px;
+        height: 150vh;
     }
 
     .secondSection h1 {
