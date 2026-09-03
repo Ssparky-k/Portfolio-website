@@ -1,16 +1,18 @@
 import { useEffect } from "react";
-// import Typed from "typed.js";
+import Typed from "typed.js";
+
 
 function MyPortfolio() {
+
   useEffect(() => {
     const typed = new Typed("#element", {
       strings: [
         "Web Developer.",
-        "Web Designer.",
-        "Frontend Developer."
+        "Frontend Developer.",
+        "Web Designer."
       ],
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 100,
       loop: true
     });
 
@@ -20,55 +22,65 @@ function MyPortfolio() {
   }, []);
 
 
-  const handleResumeClick = () => {
+  const handleResumeDownload = () => {
     alert("Resume is downloading!");
   };
 
-
-
   return (
     <>
+   
       <header>
         <nav>
-          <div className="left">Shivraj Portfolio</div>
+          <div className="left">
+            Shivraj Portfolio
+          </div>
 
           <div className="right">
             <ul>
-              <li className="home">
-                <a href="/" onClick={handleHomeClick}>
-                  Home
+              <li className="project">
+                <a href="/project.html">
+                  Projects
                 </a>
               </li>
 
-              <li className="project">
-                <a href="/project.html">Projects</a>
-              </li>
-
               <li className="contact">
-                <a href="/contact.html">Contact Me</a>
+                <a href="/contact.html">
+                  Contact
+                </a>
               </li>
 
               <li className="about">
-                <a href="/about.html">About</a>
+                <a href="/about.html">
+                  About
+                </a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
 
-    
+   
       <main>
+
+      
         <section className="firstSection">
+
           <div className="leftSection">
+
             <div>
-              Hi, My name is <span className="purple">Shivraj</span>
+              Hi, My name is{" "}
+              <span className="purple">
+                Shivraj
+              </span>
             </div>
 
             <div>
               and I am a Computer Engineering Student,
             </div>
 
-            <div>and passionate</div>
+            <div>
+              and passionate
+            </div>
 
             <span id="element"></span>
 
@@ -77,31 +89,36 @@ function MyPortfolio() {
                 href="/Shivraj kate.pdf"
                 download
                 className="btn"
-                onClick={handleResumeClick}
+                onClick={handleResumeDownload}
               >
                 Download Resume
               </a>
             </div>
+
           </div>
 
           <div className="rightSection">
-            <img src="/developer.png" alt="Developer" />
+            <img
+              src=""
+              alt="Developer"
+            />
           </div>
+
         </section>
 
         <hr />
 
-        {/* Second Section */}
+    
         <section className="secondSection">
-          <span className="text-gray">
-            What I have done so far
-          </span>
 
-          <h1>Education and Experience</h1>
+          <h1>
+            Education and Experience
+          </h1>
 
           <div className="box">
-            {/* Education */}
+
             <div className="vertical">
+
               <img
                 className="image-top"
                 src="/diplomaStudent.png"
@@ -120,10 +137,12 @@ function MyPortfolio() {
                 projects and improving my programming and
                 problem-solving skills.
               </div>
+
             </div>
 
             {/* Technologies */}
             <div className="vertical">
+
               <img
                 className="image-top"
                 src="/html,css,js.png"
@@ -142,10 +161,12 @@ function MyPortfolio() {
                 programming, problem-solving, and web development
                 skills by working on practical projects.
               </div>
+
             </div>
 
-            {/* Student Management System */}
+            
             <div className="vertical">
+
               <img
                 className="image-top"
                 src="/SMS.jpg"
@@ -158,15 +179,17 @@ function MyPortfolio() {
 
               <div className="vartical-decs">
                 A web-based Student Management System designed
-                to manage and organize student information
-                through a simple and user-friendly interface.
-                The project demonstrates the use of HTML for
-                structure, CSS for responsive styling, and
-                JavaScript for interactive functionality.
+                to manage and organize student information through
+                a simple and user-friendly interface. The project
+                demonstrates the use of HTML for structure, CSS
+                for responsive styling, and JavaScript for
+                interactive functionality.
               </div>
+
             </div>
 
             <div className="vertical">
+
               <img
                 className="image-top"
                 src="/games.png"
@@ -183,20 +206,29 @@ function MyPortfolio() {
                 players to play against each other through an
                 interactive and responsive interface.
               </div>
+
             </div>
+
           </div>
         </section>
+
       </main>
 
+      {/* Footer */}
       <footer>
+
         <div className="footer">
+
           <div className="footer-first">
-            <h3>Shivraj Developer Portfolio</h3>
+            <h3>
+              Shivraj Developer Portfolio
+            </h3>
           </div>
 
           <div className="footer-second">
             <ul>
-              <li>Home</li>
+              Portfolio topics
+              <li>Projects</li>
               <li>About Me</li>
               <li>Contact</li>
             </ul>
@@ -210,14 +242,17 @@ function MyPortfolio() {
               <li>Running</li>
             </ul>
           </div>
+
         </div>
 
         <div className="footer-rights">
           Copyright © www.shivrajportfolio.com | All rights reserved
         </div>
+
       </footer>
     </>
   );
 }
+
 
 export default MyPortfolio
