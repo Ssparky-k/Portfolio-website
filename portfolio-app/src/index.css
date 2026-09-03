@@ -27,7 +27,6 @@ img {
   display: block;
 }
 
-/* ================= HEADER ================= */
 
 header {
   width: 100%;
@@ -76,7 +75,7 @@ nav ul li a:hover {
   color: rgb(180, 150, 255);
 }
 
-/* ================= MAIN ================= */
+
 
 main {
   width: 100%;
@@ -93,7 +92,6 @@ main hr {
   margin: 60px auto;
 }
 
-/* ================= FIRST SECTION ================= */
 
 .firstSection {
   width: 90%;
@@ -178,7 +176,6 @@ main hr {
   object-fit: contain;
 }
 
-/* ================= SECOND SECTION ================= */
 
 .secondSection {
   width: 90%;
@@ -276,7 +273,6 @@ main hr {
   text-align: justify;
 }
 
-/* ================= FOOTER ================= */
 
 footer {
   width: 100%;
@@ -333,7 +329,6 @@ footer {
   font-size: 14px;
 }
 
-/* ================= 1024px ================= */
 
 @media screen and (max-width: 1024px) {
 
@@ -374,7 +369,6 @@ footer {
   }
 }
 
-/* ================= 768px ================= */
 
 @media screen and (max-width: 768px) {
 
@@ -494,7 +488,6 @@ footer {
   }
 }
 
-/* ================= 576px ================= */
 
 @media screen and (max-width: 576px) {
 
@@ -606,7 +599,7 @@ footer {
   }
 }
 
-/* ================= 400px ================= */
+
 
 @media screen and (max-width: 400px) {
 
@@ -661,4 +654,4 @@ footer {
   .vartical-decs {
     font-size: 12px;
   }
-}
+} 
