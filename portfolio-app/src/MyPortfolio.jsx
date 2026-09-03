@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 import Typed from "typed.js";
+import developer from './assets/developer.png';
+import student from './assets/diplomaStudent.png';
+import games from './assets/games.png';
+import language from './assets/html,css,js.png';
+import SMS from './assets/SMS.jpg';
 
 
 function MyPortfolio() {
@@ -37,6 +42,12 @@ function MyPortfolio() {
 
           <div className="right">
             <ul>
+                <li className="home">
+                <a href="/Home.html">
+                  Home
+                </a>
+              </li>
+
               <li className="project">
                 <a href="/project.html">
                   Projects
@@ -93,7 +104,12 @@ function MyPortfolio() {
               >
                 Download Resume
               </a>
+
+              <div class="rightSection">
+                <img src={developer} alt="developer"></img>
             </div>
+            </div>
+
 
           </div>
 
@@ -121,9 +137,9 @@ function MyPortfolio() {
 
               <img
                 className="image-top"
-                src="/diplomaStudent.png"
-                alt="Diploma Student"
-              />
+                src={student}
+                alt="Student"
+              /> 
 
               <div className="vartical-title">
                 Diploma Student (2024-2026)
@@ -140,12 +156,12 @@ function MyPortfolio() {
 
             </div>
 
-            {/* Technologies */}
+      
             <div className="vertical">
 
               <img
                 className="image-top"
-                src="/html,css,js.png"
+                src={language}
                 alt="HTML CSS JavaScript"
               />
 
@@ -169,7 +185,7 @@ function MyPortfolio() {
 
               <img
                 className="image-top"
-                src="/SMS.jpg"
+                src={SMS}
                 alt="Student Management System"
               />
 
@@ -192,7 +208,7 @@ function MyPortfolio() {
 
               <img
                 className="image-top"
-                src="/games.png"
+                src={games}
                 alt="Game Projects"
               />
 
@@ -214,7 +230,7 @@ function MyPortfolio() {
 
       </main>
 
-      {/* Footer */}
+     
       <footer>
 
         <div className="footer">
