@@ -1,17 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import developer from './assets/developer.png';
 import student from './assets/diplomaStudent.png';
 import games from './assets/games.png';
 import language from './assets/html,css,js.png';
 import SMS from './assets/SMS.jpg';
-
-
+import resumePdf from './assets/Shivraj kate.pdf';
+import { Link } from "react-router-dom";
 
 function MyPortfolio() {
+    const el = useRef(null);
 
     useEffect(() => {
-        const typed = new Typed("#element", {
+        const typed = new Typed(el.current, {
             strings: [
                 "Web Developer.",
                 "Frontend Developer.",
@@ -27,56 +28,39 @@ function MyPortfolio() {
         };
     }, []);
 
-
     const handleResumeDownload = () => {
         alert("Resume is downloading!");
     };
 
     return (
         <>
-
             <header>
                 <nav>
                     <div className="left">
-                        Shivraj Portfolio
+                        <Link to="/">Shivraj Portfolio</Link>
                     </div>
 
                     <div className="right">
                         <ul>
-
                             <li className="project">
-                                <a href="/project.html">
-                                    Projects
-                                </a>
+                                <Link to="/Projects">Projects</Link>
                             </li>
 
                             <li className="contact">
-                                <a href="/contact.html">
-                                    Contact
-                                </a>
+                                <Link to="/Contact">Contact</Link>
                             </li>
 
                             <li className="about">
-                                <a href="./About.jsx">
-                                    About
-                                </a>
+                                <Link to="/About">About</Link>
                             </li>
                         </ul>
                     </div>
-
-
-
                 </nav>
             </header>
 
-
             <main>
-
-
                 <section className="firstSection">
-
                     <div className="leftSection">
-
                         <div>
                             Hi, My name is{" "}
                             <span className="purple">
@@ -92,18 +76,17 @@ function MyPortfolio() {
                             and passionate
                         </div>
 
-                        <span id="element"></span>
+                        <span ref={el} id="element"></span>
 
                         <div className="buttons">
                             <a
-                                href="/Shivraj kate.pdf"
-                                download
+                                href={resumePdf}
+                                download="Shivraj_Kate_Resume.pdf"
                                 className="btn"
                                 onClick={handleResumeDownload}
                             >
                                 Download Resume
                             </a>
-                         
                         </div>
 
 
@@ -240,9 +223,15 @@ function MyPortfolio() {
                     <div className="footer-second">
                         <ul>
                             Portfolio topics
-                            <li>Projects</li>
-                            <li>About Me</li>
-                            <li>Contact</li>
+                            <li>
+                                <Link to="/Projects">Projects</Link>
+                            </li>
+                            <li>
+                                <Link to="/About">About Me</Link>
+                            </li>
+                            <li>
+                                <Link to="/Contact">Contact</Link>
+                            </li>
                         </ul>
                     </div>
 
